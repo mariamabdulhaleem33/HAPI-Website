@@ -1,0 +1,11 @@
+{
+    "NavBar":{
+        "link1":"Home",
+        "link2":"Library",
+        "link3":"About us",
+        "button":"Get started"  
+    },
+    "Home":{
+        "preview":"Watch Preview"
+    }
+}
