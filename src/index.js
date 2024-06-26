@@ -11,6 +11,7 @@ import ar from "./translations/AR/global.json";
 import i18next from 'i18next';
 import { I18nextProvider } from 'react-i18next';
 import {BrowserRouter} from 'react-router-dom';
+import { HashRouter } from "react-router-dom";
 i18next.init({
   interpolation:{escapeValue:false},
   lng:"en",
@@ -27,11 +28,11 @@ i18next.init({
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-   <BrowserRouter>
+   <HashRouter base="/">
     <I18nextProvider i18n={i18next}>
         <AppRouter />
     </I18nextProvider>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
