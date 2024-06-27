@@ -20,7 +20,7 @@ const NavBar = forwardRef<HTMLDivElement, NavBarProps>((props, ref) => {
     };
 
     const handleButtonClick = () => {
-        navigate('/Home#con');
+        navigate('/About#con');
     };
 
     const handleTabClick = (tab: string) => {
@@ -63,9 +63,9 @@ const NavBar = forwardRef<HTMLDivElement, NavBarProps>((props, ref) => {
                         {/* Dropdown button content */}
                     </button>
                     <ul className="dropdown-menu custom-dropdown-menu">
-                        <li><a className="dropdown-item" type="button" href="/">{t("NavBar.link1")}</a></li>
-                        <li><a className="dropdown-item" type="button" href="/Library">{t("NavBar.link2")}</a></li>
-                        <li><a className="dropdown-item" type="button" href="/About">{t("NavBar.link3")}</a></li>
+                        <li><Link style={{textDecoration:"none"}} className="dropdown-item" type="button" to="/">{t("NavBar.link1")}</Link></li>
+                        <li><Link style={{textDecoration:"none"}} className="dropdown-item" type="button" to="/Library">{t("NavBar.link2")}</Link></li>
+                        <li><Link style={{textDecoration:"none"}} className="dropdown-item" type="button" to="/About">{t("NavBar.link3")}</Link></li>
                         <hr style={{ width: "70%", margin: "auto" }} />
                         <li className="dropdown-submenu mt-3">
                             <a style={{ color: "#016451" }} className="dropdown-item dropdown-toggle">
