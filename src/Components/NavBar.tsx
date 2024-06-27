@@ -68,7 +68,7 @@ const NavBar = forwardRef<HTMLDivElement, NavBarProps>((props, ref) => {
                         <li><Link style={{textDecoration:"none"}} className="dropdown-item" type="button" to="/Library">{t("NavBar.link2")}</Link></li>
                         <li><Link style={{textDecoration:"none"}} className="dropdown-item" type="button" to="/About">{t("NavBar.link3")}</Link></li>
                         <hr style={{ width: "70%", margin: "auto" }} />
-                        <li className="dropdown-submenu mt-3">
+                        {/* <li className="dropdown-submenu mt-3">
                             <a style={{ color: "#016451" }} className="dropdown-item dropdown-toggle">
                                 <span style={{ backgroundColor: "#E7DEB3", color: "#016451", borderRadius: "10px", padding: "5px" }}>Language</span>
                             </a>
@@ -76,7 +76,7 @@ const NavBar = forwardRef<HTMLDivElement, NavBarProps>((props, ref) => {
                                 <li><a className="dropdown-item" href="/" onClick={(e: MouseEvent) => { e.preventDefault(); handleChangeLanguage('en'); }}>English</a></li>
                                 <li><a className="dropdown-item" href="/" onClick={(e: MouseEvent) => { e.preventDefault(); handleChangeLanguage('ar'); }}>Arabic</a></li>
                             </ul>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>

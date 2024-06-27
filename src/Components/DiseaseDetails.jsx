@@ -104,7 +104,7 @@ function DiseaseDetails() {
         </div>
         <div className="field">
           <h3>symptoms</h3>  
-          <p className="comments-details">{disDetails._symptoms}</p> 
+          <p className="comments-details">{disDetails.symptoms}</p> 
         </div>
       </div>
     </div>
