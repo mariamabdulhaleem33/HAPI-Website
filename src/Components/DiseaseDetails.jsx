@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 function DiseaseDetails() {
   console.log(useParams()); 
   const { CropID, DiseaseID } = useParams();
-  console.log(CropID,DiseaseID);
+  // console.log(CropID,DiseaseID);
   const [disDetails, setDisDetails] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -42,7 +42,7 @@ function DiseaseDetails() {
 
   const selectedCrop = CropArray.find(crop => crop._id === parseInt(CropID));
   const selectedDisease = selectedCrop ? selectedCrop._diseases.find(disease => disease._id === parseInt(DiseaseID)) : null;
-  console.log(selectedDisease);
+  // console.log(selectedDisease);
 
   if (loading) {
     return <div>Loading...</div>;
@@ -60,7 +60,7 @@ function DiseaseDetails() {
     <div className='main'>
       <NavBar Ref="library" />
       <div className="switch-content-two">
-        <Link style={{ textDecoration: "none" }} to={`/Library/${selectedCrop._id}`}>
+        <Link style={{ textDecoration: "none" }} to={`/gLibrary/${selectedCrop._id}`}>
           <div className="crop-name">
             <img width="25" height="25" src={selectedCrop._icon} alt="Apple" />
             <h3>{selectedCrop._name}</h3>
@@ -104,7 +104,7 @@ function DiseaseDetails() {
         </div>
         <div className="field">
           <h3>symptoms</h3>  
-          <p className="comments-details">{disDetails.symptoms}</p> 
+          <p className="comments-details">{disDetails._symptoms}</p> 
         </div>
       </div>
     </div>

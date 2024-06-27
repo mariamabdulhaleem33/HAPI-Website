@@ -1108,7 +1108,7 @@ textarea:focus{
   }
 
   .get-started-but, .diseases-but{
-    width:100px;
+    width:120px;
     height: 35px;
     margin-left: 55px;
     font-size: 15px;
@@ -1260,7 +1260,7 @@ textarea:focus{
 }
 
 .plans{
-  width:100%;
+  width:90%;
   height:500px;
   margin:auto 50px;
   gap:50px;
@@ -1270,7 +1270,14 @@ textarea:focus{
 }
 
 .plan{
-  width:400px;
+  width:300px;
+  height:400px;
+  padding-right:10px;
+
+}
+
+.plan p{
+  font-size:20px;
 }
 
 .vision-right img:hover{
@@ -1527,9 +1534,10 @@ form h4{
 
 #side{
   display:flex;
-  background-color: #016451;
-  width:12px;
-  color:#E7DEB3;
+  width:25px;
+  height:35px;
+  margin-bottom:10px;
+  margin-right:10px;
 }
 
 .crops{
@@ -1724,6 +1732,10 @@ form h4{
 
 .field{
   height:150px;
+}
+
+.crop-disease-cont-up{
+  height:25%;
 }
 
 }

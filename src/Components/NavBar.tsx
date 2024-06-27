@@ -3,6 +3,7 @@ import { NavLink, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import logo from '../images/LOGOFILLED.png';
+import menu from "../images/MENUFRAME.png"; 
 
 interface NavBarProps {
     initialActiveTab: string;
@@ -59,8 +60,8 @@ const NavBar = forwardRef<HTMLDivElement, NavBarProps>((props, ref) => {
                 </div>
 
                 <div id="side" className="btn-group dropstart">
-                    <button type="button" className="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        {/* Dropdown button content */}
+                    <button type="button" style={{margin:"auto",marginBottom:"10px", height:"40px"}} className="btn" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src={menu} style={{}}/> 
                     </button>
                     <ul className="dropdown-menu custom-dropdown-menu">
                         <li><Link style={{textDecoration:"none"}} className="dropdown-item" type="button" to="/">{t("NavBar.link1")}</Link></li>
