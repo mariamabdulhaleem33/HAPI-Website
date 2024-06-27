@@ -28,11 +28,11 @@ i18next.init({
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+     <I18nextProvider i18n={i18next}>
    <HashRouter base="/">
-    {/* <I18nextProvider i18n={i18next}> */}
         <AppRouter />
-    {/* </I18nextProvider> */}
   </HashRouter>
+    </I18nextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
