@@ -59,7 +59,7 @@ const NavBar = forwardRef<HTMLDivElement, NavBarProps>((props, ref) => {
                     {/* <button onClick={() => handleChangeLanguage("ar")}>ar</button> */}
                 </div>
 
-                <div id="side" className="btn-group dropstart">
+                <div id="side" className="btn-group dropdown">
                     <button type="button" style={{margin:"auto",marginBottom:"10px", height:"40px"}} className="btn" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src={menu} style={{}}/> 
                     </button>
