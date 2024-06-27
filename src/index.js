@@ -29,9 +29,9 @@ i18next.init({
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
    <HashRouter base="/">
-    <I18nextProvider i18n={i18next}>
+    {/* <I18nextProvider i18n={i18next}> */}
         <AppRouter />
-    </I18nextProvider>
+    {/* </I18nextProvider> */}
   </HashRouter>
 );
 
