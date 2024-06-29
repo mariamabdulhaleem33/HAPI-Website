@@ -26,7 +26,7 @@ const CropDiseases = () => {
         });
         if (response.headers["content-type"].includes("application/json")) {
           console.log(response.data);
-          setDiseases(response.data); // Assuming response.data is an array
+          setDiseases(response.data);
         } else {
           console.error("Unexpected content type:", response.headers["content-type"]);
           setError("Unexpected response format. Please try again later.");
@@ -40,7 +40,7 @@ const CropDiseases = () => {
         });
         if (response.headers["content-type"].includes("application/json")) {
           console.log(response.data[0]);
-          setDiseases(response.data[0]); // Assuming response.data is an array
+          setDiseases(response.data[0]); 
         } else {
           console.error("Unexpected content type:", response.headers["content-type"]);
           setError("Unexpected response format. Please try again later.");
@@ -63,11 +63,10 @@ const CropDiseases = () => {
     if (searchQuery) {
       fetchDiseases(searchQuery);
     } else {
-      fetchDiseases(); // Fetch all diseases related to the crop
+      fetchDiseases();
     }
   }, [searchQuery, id]);
 
-  // Find the crop with the matching id
   const selectedCrop = CropArray.find((crop) => crop._id === parseInt(id));
 
   if (!selectedCrop) {
@@ -128,7 +127,7 @@ const CropDiseases = () => {
                     className="type1"
                     key={disease.id}
                   >
-                    <img src={selectedCrop._diseases[i]._img} alt="" />
+                    <img src={selectedCrop._diseases[i]._img} alt="..." />
                     <h3>{disease.name}</h3>
                   </Link>
                 ))
@@ -143,7 +142,7 @@ const CropDiseases = () => {
                   className="type1"
                   key={disease.id}
                 >
-                  <img src={selectedCrop._diseases[i]._img} alt="" />
+                  <img src={selectedCrop._diseases[i]._img} alt="..." />
                   <h3>{disease.name}</h3>
                 </Link>
               ))

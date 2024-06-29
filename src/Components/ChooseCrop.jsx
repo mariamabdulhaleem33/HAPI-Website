@@ -6,8 +6,8 @@ import axios from "axios";
 
 const ChooseCrop = () => {
   const [crops, setCrops] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchCrops = async () => {
@@ -17,8 +17,6 @@ const ChooseCrop = () => {
             'ngrok-skip-browser-warning': 'true'
           }
         });
-
-        console.log('Response:', response);
 
         if (response.headers["content-type"].includes("application/json")) {
           setCrops(response.data);
@@ -68,7 +66,7 @@ const ChooseCrop = () => {
           {crops.map((crop,i) => (
             <Link style={{ textDecoration: "none" }} to={`/Library/${crop.id}`} key={crop.id}>
               <div className="crop">
-                <img src={CropArray[i]._icon}/>
+                <img src={CropArray[i]._icon} alt="..."/>
                 <h3>{crop.name}</h3>
               </div>
             </Link>

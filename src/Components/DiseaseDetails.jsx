@@ -10,7 +10,6 @@ import { useEffect, useState } from "react";
 function DiseaseDetails() {
   console.log(useParams()); 
   const { CropID, DiseaseID } = useParams();
-  // console.log(CropID,DiseaseID);
   const [disDetails, setDisDetails] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -42,7 +41,6 @@ function DiseaseDetails() {
 
   const selectedCrop = CropArray.find(crop => crop._id === parseInt(CropID));
   const selectedDisease = selectedCrop ? selectedCrop._diseases.find(disease => disease._id === parseInt(DiseaseID)) : null;
-  // console.log(selectedDisease);
 
   if (loading) {
     return <div>Loading...</div>;

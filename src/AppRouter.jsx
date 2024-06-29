@@ -1,7 +1,7 @@
 
 import { Component } from "react";
 import Home from "./Components/Home.tsx";
-import About from './Components/About.jsx';
+import About from './Components/About.tsx';
 //import UserPlans from './Components/UserPlans.jsx';
 //import  Contact from './Components/Contact.jsx';
 import ChooseCrop from "./Components/ChooseCrop.jsx";

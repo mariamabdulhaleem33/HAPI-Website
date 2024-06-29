@@ -1,18 +1,10 @@
 import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-
 import NavBar from "./NavBar.tsx";
-import ScrollableComponent from "./ScrollableList";
-import Scr from "./scr";
-import Footer from "./Footer";
-
-import logo from '../images/LOGOFILLED.png';
-import slide1 from "../images/Property 1=Default.png";
-import slide2 from "../images/Property 1=Variant2.png";
-import slide3 from "../images/Property 1=Variant3.png";
-import slide5 from "../images/Property 1=Variant5.png";
-import slide6 from "../images/Property 1=Variant6.png";
+import ScrollableComponent from "./ScrollableList.tsx";
+import Footer from "./Footer.tsx";
+import logo from "../images/LOGOFILLED.png";
 import preview from "../images/Preview.png";
 import irr from "../images/irrigation icon (1).png";
 import recommend from "../images/plant.png";
@@ -40,33 +32,33 @@ const Home: React.FC = () => {
                 </div>
             </div>
             <div className="offer">
-                <h3>We Offer You</h3>
+                <h3>{t("Home.offer")}</h3>
                 <div className="offer-up">
                     <div className="irr">
                         <img src={irr} alt="Irrigation" />
-                        <p>Irrigation & Fertilization Optimization</p>
+                        <p>{t("Home.irr")}</p>
                     </div>
                     <div className="recommend">
                         <img src={recommend} alt="Recommendation" />
-                        <p>Crop Recommendation</p>
+                        <p>{t("Home.recommend")}</p>
                     </div>
                 </div>
                 <div className="offer-down">
                     <div className="dis">
                         <img src={dis} alt="Diseases" />
-                        <p>Diseases Detection</p>
+                        <p>{t("Home.disease")}</p>
                     </div>
                     <div className="Lib">
                         <img src={Lib} alt="Library" />
-                        <p>Comprehensive Library</p>
+                        <p>{t("Home.library")}</p>
                     </div>
                 </div>
                 <hr />
             </div>
             <div className="vision">
                 <div className="vision-left">
-                    <h3>Our Vision</h3>
-                    <p>To envision an agricultural renaissance in Egypt, where cutting-edge technologies empower farmers, enhance productivity, ensure food sovereignty, and foster economic prosperity across communities.</p>
+                    <h3>{t("Home.vision")}</h3>
+                    <p>{t("Home.visionp")}</p>
                 </div>
                 <div className="vision-right">
                     <img src={vegetables} alt="Vegetables" />

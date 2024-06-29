@@ -62,10 +62,11 @@
 }
 
 .nav-cont-right{
-  width:30%;
+  width:fit-content;
   display:flex;
+  gap:30px;
   /* flex-direction:column; */
-  justify-content:space-between;
+  justify-content:space-evenly;
   align-items:center;
 }
 
@@ -129,6 +130,7 @@
   border:none;
   border-radius: 16px;
   width:164px;
+  margin-right:50px;
   height: 52px;
   font-family: 'poppins';
   font-size: 20px;
@@ -225,6 +227,10 @@
   font-size: 30px;
   font-weight: 400;
   text-transform:capitalize;
+}
+
+.dropstart{
+  width:fit-content !important;
 }
 
 .crops{
@@ -528,10 +534,11 @@
 }
 
 .preview{
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
   width:22%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
 }
 
 .preview img{
@@ -597,7 +604,7 @@
 }
 
 .vision{
-  height:450px;
+  height:350px;
 }
 
 .vision-left{
@@ -605,7 +612,7 @@
   height:300px;
   display:flex;
   flex-direction:column;
-  justify-content:space-around;
+  justify-content:space-evenly;
   align-items:center;
 }
 
@@ -644,7 +651,7 @@
   width:100%;
   height:500px;
   margin:auto 50px;
-  gap:130px;
+  gap:120px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -712,6 +719,7 @@
 
 
 .plan-top ul{
+  width:90%;
   height:150px;
   display:flex;
   flex-direction: column;
@@ -732,6 +740,7 @@
   font-size: 18px;
   text-wrap: wrap;
   align-self: flex-start;
+  margin-right: 20px;
 }
 
 .fixed {
@@ -775,7 +784,7 @@
 }
 
 .footer-left{
-
+  width:40%;
   height:300px;
   display:flex;
   justify-content:space-evenly;
@@ -833,7 +842,7 @@
 }
 
 .footer-right .ico{
-  width:60%;
+  width:80%;
   display:flex;
   justify-content:space-between;
   align-items: center;
@@ -1094,10 +1103,17 @@ textarea:focus{
     justify-content:center;
     align-items:flex-start;
   }
-
+  .nav-content{
+    justify-content: space-evenly;
+  }
   .nav-cont-left{
     width:30%;
   }
+  .nav-cont-right{
+    width:100%;
+    justify-content:space-between;
+  }
+
 
   .home-header{
     margin-top: 9vh;
@@ -1107,13 +1123,18 @@ textarea:focus{
     background-size:cover;
   }
 
+  #lang{
+    display:none;
+  }
+
   .get-started-but, .diseases-but{
-    width:120px;
-    height: 35px;
-    margin-left: 55px;
+    width:200px;
+    height: 30px;
+    margin-left: 0px;
     font-size: 15px;
     font-weight: 500;
     border-radius: 10px;
+    margin-right:0px;
   }
 
   .nav-links a ,.field p, .crop-details-left p, .vision-left p, .plan p, .plan-top ul li {
@@ -1136,7 +1157,8 @@ textarea:focus{
   
 .preview{
   display:flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap:10px;
   align-items: center;
   width:200px;
 }
@@ -1255,9 +1277,6 @@ textarea:focus{
   transition: all 2s;
 }
 
-.user-plans{
-  margin: 20px auto;
-}
 
 .plans{
   width:90%;
@@ -1299,7 +1318,8 @@ textarea:focus{
 }
 
 .footer-left{
-  width:35%;
+  width:32%;
+  margin-right:30px;
   height:300px;
   display:flex;
   flex-direction: column;
@@ -1308,8 +1328,9 @@ textarea:focus{
 }
 
 .footer-left img{
-  width:120px;
-  height:80px;
+  width:110px;
+  height:70px;
+ margin-left: 20px;
 }
 
 .footer-left ul{
@@ -1358,7 +1379,7 @@ textarea:focus{
 }
 
 .footer-right .ico{
-  width:60%;
+  width:70%;
   display:flex;
   justify-content:space-between;
   align-items: center;
@@ -1603,7 +1624,7 @@ form h4{
 }
 
 .nav-content{
-  width:90vw;
+  width:100%;
 }
 
 .btn-group{
@@ -1749,6 +1770,15 @@ form h4{
 
 .crop-disease-cont-up{
   height:25%;
+}
+
+.plan-top ul li{
+  width:250px;
+  color:#017D65;
+  font-size: 18px;
+  text-wrap: wrap;
+  align-self: flex-start;
+  margin-right: 20px;
 }
 
 }
