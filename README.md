@@ -3,18 +3,21 @@ Welcome to the HAPI Website. This website is a key part of our graduation projec
 
 # Website Overview
 Our website is divided into three main sections, each designed to provide a comprehensive and user-friendly experience:
+ 
+ ### Home Page
+ #### The Home Page is your gateway to everything we offer. It includes:
 
-### Home Page
-- The Home Page is your gateway to everything we offer. It includes:
-
- ### What We Offer?: Discover the cutting-edge agricultural technologies and services we provide.
+ ### What We Offer?:
+ #### Discover the cutting-edge agricultural technologies and services we provide.
 - Our Vision: Learn about our mission.
 - Our Plans: Explore our various plans tailored to meet the needs of landowners, from free basic services to ultimate plans.
-- Comprehensive Library :Our Library is a rich source of information, featuring:
+- Comprehensive Library :
+   Our Library is a rich source of information, featuring:
 
 - Crops and Diseases: Access detailed information about different 7 crops and their associated diseases.
 - Disease Management: Learn how to identify, prevent, and treat crop diseases effectively.
 - Continuous Updates: Stay informed with regularly updated content, linked seamlessly to our backend via Axios.
+- 
 ### About Us: Get to know the people and the passion behind HAPI:
 
 - Our Story: Read about our journey, and motivations.
@@ -31,4 +34,4 @@ Our website is divided into three main sections, each designed to provide a comp
 - Axios: For making HTTP requests and handling backend integration.
 # Live Demo:
 https://mariamabdulhaleem3.github.io/HAPI-Website/
-We hope HAPI can make a significant impact in the agricultural community.
+#### We hope HAPI can make a significant impact in the agricultural community.
