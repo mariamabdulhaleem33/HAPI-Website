@@ -67,14 +67,14 @@ const ContactUs: React.FC = () => {
         <div className="name">
           <label>{t("Contact.name")}</label>
           <div className="name-cont">
-            <img src={user} style={{ width: "18px", height: "20px", marginLeft: "7px" }} alt="User Icon" />
+            <img src={user} style={{ width: "18px", height: "20px", margin: "0 5px" }} alt="User Icon" />
             <input type="text" name="From_Name" value={formState.From_Name} onChange={changeInputValue} />
           </div>
         </div>
         <div className="email">
           <label>{t("Contact.email")}</label>
           <div className="email-cont">
-            <img src={emailIcon} style={{ width: "22px", height: "18px", marginLeft: "5px" }} alt="Email Icon" />
+            <img src={emailIcon} style={{ width: "22px", height: "18px", margin: "0 5px" }} alt="Email Icon" />
             <input type="email" name="From_Email" value={formState.From_Email} onChange={changeInputValue} />
           </div>
         </div>

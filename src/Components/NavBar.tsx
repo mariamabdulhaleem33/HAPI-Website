@@ -66,9 +66,9 @@ const NavBar = forwardRef<HTMLDivElement, NavBarProps>((props, ref) => {
                             <button type="button"  className="btn" data-bs-toggle="dropdown" aria-expanded="false" >
                             <span style={{ backgroundColor: "#E7DEB3", color: "#016451", borderRadius: "10px", padding: "5px" }}><img  style={{marginBottom:"3px"}} alt="..." src={lang}/></span>
                             </button>
-                            <ul style={{backgroundColor:"#E7DEB3", color: "#016451"}} className="dropdown-menu">
-                                <li><Link onClick={() =>setLTR("en")}>English</Link></li>
-                                <li><Link onClick={() =>setRTL("ar")}>عربي</Link></li>
+                            <ul style={{backgroundColor:"#E7DEB3"}} className="dropdown-menu large">
+                                <li onClick={() =>setLTR("en")}>English</li>
+                                <li onClick={() =>setRTL("ar")}>عربي</li>
                             </ul>
                         </div>
                         <div id="side" className="btn-group dropdown">
